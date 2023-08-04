@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+ul, li {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+header {
+    width: 100%;
+    background-color: #FECE00;
+    display: flex;
+    justify-content: center;   
+}
+#head {
+    width: 70%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 60px;
+    margin-left: 20px;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    margin: 0 20px;
+    font-size: 20px;
+}
+#slider {
+    width: 100%; height: 45vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+#slidewrap {
+    width: 70%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+}
+.slide>li {
+    width: 100%;
+    position: absolute;
+    left: 0; top: 50px;
+}
+.slide>li>img {
+    width: 100%; height: 100%;
+}
+.slide li:not(:first-child) {
+    display: none;
+}
+.slide h2 {
+    margin-top: 10px;
+}
+#member {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.member {
+    width: 70%;
+}
+#bm {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#bm img {
+    width: 300px;
+}
+#shop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.shop {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product div {
+    width: 30%;
+}
+.product img {
+    width: 100%;
+}
+.product p {
+    text-align: center;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FECE00;
+    padding: 50px 0;
+}
+#foot {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    width: 50%;
+    display: flex;
+}
+.left div {
+    margin: 0 10px;
+}
+.left li {
+    margin: 10px 0;
+}
+.right {
+    width: 50%;
+}
+.right p {
+    margin-bottom: 10px;
+}
+#foot h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}

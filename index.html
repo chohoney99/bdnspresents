@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDNS</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script>
+        let i = 0;
+        function slide(){
+            i++;
+            if(i>$(".slide li:last").index()){
+                i=0;
+            }
+            $(".slide li").eq(i).stop().fadeIn("slow");
+            $(".slide li").eq(i-1).stop().fadeOut();
+        }
+        setInterval (slide, 5000);
+    </script>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <img src="img/logo2.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li>CONTENTS</li>
+                    <li>MEMBERS</li>
+                    <li>SHOP</li>
+                    <li>CONTACT</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="slider">
+        <div id="slidewrap">
+            <h1>BDNS Contents</h1>
+            <ul class="slide">
+                <li>
+                    <img src="img/homevideo.jpg" alt="">
+                    <h2>빠더너스 홈비디오</h2>
+                </li>
+                <li>
+                    <img src="img/ms.jpg" alt="">
+                    <h2>문상 기자 - 언제나 당신 곁에</h2>
+                </li>
+                <li>
+                    <img src="img/odg.jpg" alt="">
+                    <h2>오지 않는 당신을 기다리며</h2>
+                </li>
+                <li>
+                    <img src="img/hic.jpg" alt="">
+                    <h2>해인칭 관찰자 시점</h2>
+                </li>
+                <li>
+                    <img src="img/moonsam.jpg" alt="">
+                    <h2>한국지리 일타강사 문쌤</h2>
+                </li>
+                <li>
+                    <img src="img/highschoolvlog.jpg" alt="">
+                    <h2>고등학생 후니쓰의 브이로그</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="member">
+        <div class="member">
+            <h1>BDNS Members</h1>
+            <div id="bm">
+                <div>
+                    <div>
+                        <img src="img/moon.webp" alt="">
+                    </div>
+                    <div>
+                        <h3>문상훈</h3>
+                        <h4>프런트맨</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h3>김진혁</h3>
+                        <h4>기획, 총괄</h4>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <div>
+                        <h3>김지철</h3>
+                        <h4>매니지먼트</h4>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+    <div id="shop">
+        <div class="shop">
+            <h1>SHOP</h1>
+            <div class="product">
+                <div>
+                    <a href=""><img src="img/happygummy.png" alt=""></a>
+                    <p><a href="">HAPPY GUMMY 1BOX(10EA)<br>
+                        18,900</a></p>
+                </div>
+                <div>
+                    <a href=""><img src="img/phonecase.png" alt=""></a>
+                    <p><a href="">GOLD BUTTON PACKAGE<br>
+                        GEL HARD CASE<br>
+                        26,900</a></p>
+                </div>
+                <div>
+                    <a href=""><img src="img/videokids.png" alt=""></a>
+                    <p><a href="">VIDEOKIDS HOODIE-GREY<br>
+                        69,000</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="foot">
+            <div class="left">
+                <div class="about">
+                    <h4>ABOUT</h4>
+                    <ul>
+                        <li>BDNS</li>
+                        <li>COLLABORATION</li>
+                        <li>ORIGINAL</li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h4>SOCIAL</h4>
+                    <ul>
+                        <li>INSTAGRAM</li>
+                        <li>YOUTUBE</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h4>HELP</h4>
+                    <ul>
+                        <li>MYPAGE</li>
+                        <li>HELP&FAQ</li>
+                        <li>Q&A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li>PRIVACY POLICY</li>
+                        <li>AGREEMENT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <p>COMPANY BDNS CEO Kim jin hyeok</p>
+                <p>BUSINESS LICENSE 510-86-02120</p>
+                <p>NETWORK LICENSE 2021-서울마포-3088</p>
+                <p>ADDRESS single house, 37, Wowsan-ro 3-an-gil, Mapo-gu, Seoul, Republic of Korea</p>
+            </div>
+            <h3>Copyright © 주식회사비디앤에스. All rights reserved.</h3>    
+        </div>
+    </footer>
+</body>
+</html>
