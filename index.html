@@ -59,55 +59,55 @@
             <h1>BDNS Team</h1>
             <div id="bm">
                 <div class="prof">
-                    <div>
-                        <img src="img/moon.webp" alt="">
+                    <div class="imgarea">
+                        <img src="img/moonsh.jpg" alt="">
                     </div>
-                    <div class>
+                    <div class="txtarea">
                         <h3>문상훈</h3>
                         <h4>프런트맨</h4>
                     </div>
                 </div>
                 <div class="prof">
                     <div>
-                        <img src="img/kim.webp" alt="">
+                        <img src="img/kjh.png" alt="">
                     </div>
-                    <div>
+                    <div class="txtarea">
                         <h3>김진혁</h3>
                         <h4>기획, 총괄</h4>
                     </div>
                 </div>
                 <div class="prof">
                     <div>
-                        <img src="" alt="">
+                        <img src="img/cjc.png" alt="">
                     </div>
-                    <div>
+                    <div class="txtarea">
                         <h3>김지철</h3>
                         <h4>매니지먼트</h4>
                     </div>
                 </div>
                 <div class="prof">
                     <div>
-                        <img src="" alt="">
+                        <img src="img/yhj.png" alt="">
                     </div>
-                    <div>
+                    <div class="txtarea">
                         <h3>유현준</h3>
                         <h4>촬영, 편집</h4>
                     </div>
                 </div>
                 <div class="prof">
                     <div>
-                        <img src="" alt="">
+                        <img src="img/hhi.png" alt="">
                     </div>
-                    <div>
+                    <div class="txtarea">
                         <h3>홍해인</h3>
-                        <h4>홈비디오, 편집</h4>
+                        <h4>촬영, 편집</h4>
                     </div>
                 </div>
                 <div class="prof">
                     <div>
-                        <img src="" alt="">
+                        <img src="img/hmg.png" alt="">
                     </div>
-                    <div>
+                    <div class="txtarea">
                         <h3>홍민기</h3>
                         <h4>굿즈</h4>
                     </div>
@@ -117,24 +117,44 @@
     </div>
     <div id="shop">
         <div class="shop">
-            <h1>SHOP</h1>
+            <div class="shoptext">
+                <h1><a href="">SHOP</a></h1>
+                <span class="prev1">&lt;</span>
+                <span class="next1">&gt;</span>
+            </div>
             <div class="product">
-                <div>
-                    <a href=""><img src="img/happygummy.png" alt=""></a>
-                    <p><a href="">HAPPY GUMMY 1BOX(10EA)<br>
-                        ₩18,900</a></p>
-                </div>
-                <div>
-                    <a href=""><img src="img/phonecase.png" alt=""></a>
-                    <p><a href="">GOLD BUTTON PACKAGE<br>
-                        GEL HARD CASE<br>
-                        ₩26,900</a></p>
-                </div>
-                <div>
-                    <a href=""><img src="img/videokids.png" alt=""></a>
-                    <p><a href="">VIDEOKIDS HOODIE-GREY<br>
-                        ₩69,000</a></p>
-                </div>
+                <ul>
+                    <li>
+                        <a href=""><img src="img/happygummy.png" alt=""></a>
+                        <p><a href="">HAPPY GUMMY 1BOX(10EA)<br>
+                            ₩18,900</a></p>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/phonecase.png" alt=""></a>
+                        <p><a href="">GOLD BUTTON PACKAGE GEL HARD CASE<br>
+                            ₩26,900</a></p>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/videokids.png" alt=""></a>
+                        <p><a href="">VIDEOKIDS HOODIE-GREY<br>
+                            ₩69,000</a></p>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/ballcap.png" alt=""></a>
+                        <p><a href="">HOONY'S BALL CAP<br>
+                            ₩49,000</a></p>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/hibrow.png" alt=""></a>
+                        <p><a href="">LIGHT WEIGHT FLEECE HALF ZIPUP-NAVY<br>
+                            ₩78,000</a></p>
+                    </li>
+                    <li>
+                        <a href=""><img src="img/calendar.png" alt=""></a>
+                        <p><a href="">2023 RED CALENDAR<br>
+                            ₩9,500</a></p>
+                    </li>
+                </ul>    
             </div>
         </div>
     </div>
@@ -199,31 +219,6 @@
         </div>
     </footer>
 
-    <script>
-        let w = $("#slidewrap").innerWidth();
-                $(window).resize(function(){
-                    w = $("#slidewrap").innerWidth();
-                });
-
-        function prev(){
-            $(".slide li:last").prependTo(".slide");
-            $(".slide").css("margin-left", -w);
-            $(".slide").stop().animate({marginLeft:0}, 800);
-        }
-        function next(){
-            $(".slide").stop().animate({marginLeft:-w}, 800, function(){
-                $(".slide li:first").appendTo(".slide");
-                $(".slide").css({marginLeft:0});
-            });
-        }
-        setInterval(next, 3000);
-
-        $(".prev").click(function(){
-            prev();
-        });
-        $(".next").click(function(){
-            next();
-        });
-    </script>
+    <script src="js.js"></script>
 </body>
 </html>
