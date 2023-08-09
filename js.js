@@ -1,3 +1,13 @@
+$(".icon").click(function(){
+    $("nav").slideToggle();
+});
+
+$(window).resize(function(){
+    if(window.innerWidth>=1024){
+        $('nav').show();
+    }
+});
+
 let w = $("#slidewrap").innerWidth();
         $(window).resize(function(){
             w = $("#slidewrap").innerWidth();
