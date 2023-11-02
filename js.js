@@ -26,7 +26,6 @@ function next(){
 }
 setInterval(next, 3000);
 
-
 $(".prev").click(function(){
     prev();
 });
